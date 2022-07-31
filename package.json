@@ -1,0 +1,49 @@
+{
+  "name": "figma-plugin-ui",
+  "version": "0.1.2",
+  "private": false,
+  "description": "figma ui for use in plugins/widgets",
+  "author": "Caleb Nance",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "type": "module",
+  "source": "src/main.js",
+  "files": ["./dist"],
+  "main": "./dist/main.cjs",
+  "module": "./dist/main.module.js",
+  "unpkg": "./dist/main.umd.js",
+  "exports": {
+    "require": "./dist/main.cjs",
+    "default": "./dist/main.modern.js"
+  },
+  "devDependencies": {
+    "microbundle": "^0.15.0"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.8.1",
+    "react": "^16.13.0 || ^17 || ^18"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "none"
+  },
+  "license": "MIT",
+  "keywords": [
+		"figma",
+    "plugin",
+    "widget",
+		"react",
+		"ui",
+		"user interface",
+    "plugins",
+    "widgets"
+	],
+  "homepage": "https://github.com/calebnance/figma-plugin-ui#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calebnance/figma-plugin-ui.git"
+  },
+	"bugs": "https://github.com/calebnance/figma-plugin-ui/issues"
+}
