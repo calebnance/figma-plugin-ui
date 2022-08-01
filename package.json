@@ -1,6 +1,6 @@
 {
   "name": "figma-plugin-ui",
-  "version": "0.1.2",
+  "version": "0.1.6",
   "private": false,
   "description": "figma ui for use in plugins/widgets",
   "author": "Caleb Nance",
@@ -10,7 +10,7 @@
   },
   "type": "module",
   "source": "src/main.js",
-  "files": ["./dist"],
+  "files": ["dist"],
   "main": "./dist/main.cjs",
   "module": "./dist/main.module.js",
   "unpkg": "./dist/main.umd.js",
