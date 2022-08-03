@@ -1,6 +1,6 @@
 {
   "name": "figma-plugin-ui",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "private": false,
   "description": "figma ui for use in plugins/widgets",
   "author": "Caleb Nance",
