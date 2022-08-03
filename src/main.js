@@ -1,25 +1,7 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
-import { styled, setup } from "goober";
+import { setup } from "goober";
 
 setup(React.createElement);
 
-const Container = styled("div")`
-  background-color: #18a0fb;
-  font-weight: bold;
-`;
-
-const LineItem = ({ label, value }) => (
-  <Container>
-    <div>Label: {label}</div>
-    <div>Value: {value}</div>
-  </Container>
-);
-
-LineItem.propTypes = {
-  // required
-  label: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired
-};
-
-export default React.memo(LineItem);
+export { default as Button } from './components/Button';
+export { default as Checkbox } from './components/Checkbox';
