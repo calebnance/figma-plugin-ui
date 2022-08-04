@@ -7,11 +7,14 @@
   "scripts": {
     "build": "npm run clean && microbundle --jsx React.createElement",
     "clean": "rm -rf ./dist/*",
-    "dev": "microbundle watch --jsx React.createElement"
+    "dev": "microbundle watch --jsx React.createElement",
+    "lint": "eslint ./src"
   },
   "type": "module",
   "source": "src/main.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/main.cjs",
   "module": "./dist/main.module.js",
   "unpkg": "./dist/main.umd.js",
@@ -19,9 +22,19 @@
     "require": "./dist/main.cjs",
     "default": "./dist/main.modern.js"
   },
+  "dependencies": {
+    "goober": "^2.1.10"
+  },
   "devDependencies": {
-    "goober": "^2.1.10",
-    "microbundle": "^0.15.0"
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.8.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.30.1",
+    "microbundle": "^0.15.0",
+    "prettier": "^2.7.1"
   },
   "peerDependencies": {
     "prop-types": "^15.8.1",

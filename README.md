@@ -3,6 +3,7 @@
 ## Table of Contents
 
 - [Install & Build](#install--build)
+- [Linting](#linting)
 - [Release Notes](#release-notes)
 
 ## Install & Build
@@ -30,6 +31,16 @@ npm run dev
 ```bash
 npm run build
 ```
+
+## Linting
+
+- `npm run lint` for a list of linting warnings/error in cli
+- make sure you have prettier package installed:
+  - [prettier for atom](https://atom.io/packages/prettier-atom)
+  - [prettier for vscode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- then make sure to enable these options (packages → prettier):
+  - eslint integration
+  - automatic format on save (toggle format on save)
 
 ## Release Notes
 
