@@ -21,8 +21,8 @@ const Container = styled('button')([
       return {
         backgroundColor: 'var(--figma-color-bg-brand, #0d99ff)',
         color: '#ffffff',
-        '&:hover, &:focus, &:focus-visible': {
-          borderColor: 'var(--figma-color-border-brand, #bde3ff)',
+        '&:focus-visible': {
+          borderColor: 'var(--figma-color-border-brand-strong, #007be5)',
           borderWidth: '2px',
           lineHeight: '28px',
           outline: 'none',
