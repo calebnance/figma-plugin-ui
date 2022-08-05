@@ -3,29 +3,44 @@ import PropTypes from 'prop-types';
 import { styled } from 'goober';
 
 const Container = styled('div')`
-  background-color: var(--figma-color-bg-brand, #0d99ff);
-  font-weight: regular;
+  cursor: pointer;
+  position: relative;
 `;
 
-function Checkbox({ label, value }) {
+const Input = styled('input')`
+  cursor: pointer;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  width: 0;
+`;
+
+const Checkmark = styled('span')`
+  background-color: #eee;
+  height: 25px;
+  width: 25px;
+`;
+
+function Checkbox({ checked, label }) {
   return (
     <Container>
-      <span>
-        Label:
-        {label}
-      </span>
-      <div>
-        Value:
-        {value}
-      </div>
+      <Input type="checkbox" checked={checked} />
+      <Checkmark />
+      {label}
     </Container>
   );
 }
 
+Checkbox.defaultProps = {
+  label: null
+};
+
 Checkbox.propTypes = {
   // required
-  label: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired
+  checked: PropTypes.bool.isRequired,
+
+  // optional
+  label: PropTypes.string
 };
 
 export default React.memo(Checkbox);
